@@ -58,4 +58,17 @@ ctaBut.textContent = siteContent["cta"]["button"]
 let ctaImg = document.querySelector('.cta img')
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-let
+let mcTopCont = document.querySelector('.text-content').children
+mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
+mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
+mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
+mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
+
+
+
+
+
+
+
+
+

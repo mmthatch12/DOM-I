@@ -49,23 +49,25 @@ topNav[3].textContent = siteContent["nav"]['nav-item-4']
 topNav[4].textContent = siteContent["nav"]['nav-item-5']
 topNav[5].textContent = siteContent["nav"]['nav-item-6']
 
-// topNav.forEach(grecol) => {grecol.style.color = 'green'}
+ topNav.forEach((grecol) => {grecol.style.color = 'green'})
 
 let plusNav = document.querySelector('nav')
   let an1 = document.createElement('a')
   an1.textContent = 'Help'
+  an1.style.color = 'green'
   let an2 = document.createElement('a')
   an2.textContent = 'Me'
+  an2.style.color = 'green'
 
   plusNav.appendChild(an1)
   plusNav.appendChild(an2)
 
 
-
-
-
 let ctaH1 = document.querySelector('h1')
 ctaH1.textContent = siteContent["cta"]["h1"]
+
+let bigH1 = document.querySelector('.cta-text h1')
+bigH1.innerText = "DOM\nIs\n Awesome"
 
 let ctaBut = document.querySelector('button')
 ctaBut.textContent = siteContent["cta"]["button"]
@@ -99,6 +101,9 @@ let contactPar = document.querySelectorAll('.contact p')
 contactPar[0].textContent = siteContent["contact"]["address"]
 contactPar[1].textContent = siteContent["contact"]["phone"]
 contactPar[2].textContent = siteContent["contact"]["email"]
+
+let bigP1 = document.querySelectorAll('.contact p')
+bigP1[0].innerText = "123 Way 456 Street\n Somewhere, USA"
 
 let footerCont = document.querySelector('footer p')
 footerCont.textContent = siteContent["footer"]["copyright"]

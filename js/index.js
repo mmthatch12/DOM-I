@@ -41,13 +41,28 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let topNav = document.querySelector("nav").children
+let topNav = document.querySelectorAll('nav a')
 topNav[0].textContent = siteContent["nav"]['nav-item-1']
 topNav[1].textContent = siteContent["nav"]['nav-item-2']
 topNav[2].textContent = siteContent["nav"]['nav-item-3']
 topNav[3].textContent = siteContent["nav"]['nav-item-4']
 topNav[4].textContent = siteContent["nav"]['nav-item-5']
 topNav[5].textContent = siteContent["nav"]['nav-item-6']
+
+// topNav.forEach(grecol) => {grecol.style.color = 'green'}
+
+let plusNav = document.querySelector('nav')
+  let an1 = document.createElement('a')
+  an1.textContent = 'Help'
+  let an2 = document.createElement('a')
+  an2.textContent = 'Me'
+
+  plusNav.appendChild(an1)
+  plusNav.appendChild(an2)
+
+
+
+
 
 let ctaH1 = document.querySelector('h1')
 ctaH1.textContent = siteContent["cta"]["h1"]

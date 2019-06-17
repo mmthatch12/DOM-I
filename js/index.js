@@ -60,7 +60,7 @@ let plusNav = document.querySelector('nav')
   an2.style.color = 'green'
 
   plusNav.appendChild(an1)
-  plusNav.appendChild(an2)
+  plusNav.prepend(an2)
 
 
 let ctaH1 = document.querySelector('h1')

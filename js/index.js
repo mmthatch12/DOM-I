@@ -40,6 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.alt = 'The Great Idea Company Logo'
 
 let topNav = document.querySelectorAll('nav a')
 topNav[0].textContent = siteContent["nav"]['nav-item-1']
@@ -74,6 +75,7 @@ ctaBut.textContent = siteContent["cta"]["button"]
 
 let ctaImg = document.querySelector('.cta img')
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+ctaImg.alt = 'A circle image of some multicolored code with a black background'
 
 let mcTopCont = document.querySelectorAll('.main-content h4')
 mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
@@ -86,6 +88,7 @@ mcTopCont[4].textContent = siteContent["main-content"]["vision-h4"]
 
 let midImg = document.querySelector('.middle-img')
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+midImg.alt = 'A rectangle image that spans the page with a black background and half of it ahs some code.'
 
 let mcBotCont = document.querySelectorAll('.main-content p')
 mcBotCont[0].textContent = siteContent["main-content"]["features-content"]

@@ -69,6 +69,7 @@ ctaH1.textContent = siteContent["cta"]["h1"]
 
 let bigH1 = document.querySelector('.cta-text h1')
 bigH1.innerText = "DOM\nIs\n Awesome"
+bigH1.style.color = 'purple'
 
 let ctaBut = document.querySelector('button')
 ctaBut.textContent = siteContent["cta"]["button"]
@@ -76,6 +77,8 @@ ctaBut.textContent = siteContent["cta"]["button"]
 let ctaImg = document.querySelector('.cta img')
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 ctaImg.alt = 'A circle image of some multicolored code with a black background'
+ctaImg.style.border = '10px dotted yellow'
+
 
 let mcTopCont = document.querySelectorAll('.main-content h4')
 mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
@@ -92,9 +95,12 @@ midImg.alt = 'A rectangle image that spans the page with a black background and 
 
 let mcBotCont = document.querySelectorAll('.main-content p')
 mcBotCont[0].textContent = siteContent["main-content"]["features-content"]
+mcBotCont[0].style.color = 'yellow'
 mcBotCont[1].textContent = siteContent["main-content"]["about-content"]
 mcBotCont[2].textContent = siteContent["main-content"]["services-content"]
+mcBotCont[2].style.background = 'green'
 mcBotCont[3].textContent = siteContent["main-content"]["product-content"]
+mcBotCont[3].style.border = '5px solid purple'
 mcBotCont[4].textContent = siteContent["main-content"]["vision-content"]
 
 let contactCont = document.querySelector('.contact h4')

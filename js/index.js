@@ -58,11 +58,25 @@ ctaBut.textContent = siteContent["cta"]["button"]
 let ctaImg = document.querySelector('.cta img')
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-let mcTopCont = document.querySelector('.text-content').children
+let mcTopCont = document.querySelectorAll('.main-content h4')
 mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
-mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
-mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
-mcTopCont[1].textContent = siteContent["main-content"]["features-content"]
+mcTopCont[1].textContent = siteContent["main-content"]["about-h4"]
+mcTopCont[2].textContent = siteContent["main-content"]["services-h4"]
+mcTopCont[3].textContent = siteContent["main-content"]["product-h4"]
+mcTopCont[4].textContent = siteContent["main-content"]["vision-h4"]
+
+
+
+let midImg = document.querySelector('.middle-img')
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let mcBotCont = document.querySelectorAll('.main-content p')
+mcBotCont[0].textContent = siteContent["main-content"]["features-content"]
+mcBotCont[1].textContent = siteContent["main-content"]["about-content"]
+mcBotCont[2].textContent = siteContent["main-content"]["services-content"]
+mcBotCont[3].textContent = siteContent["main-content"]["product-content"]
+mcBotCont[4].textContent = siteContent["main-content"]["vision-content"]
+
 
 
 

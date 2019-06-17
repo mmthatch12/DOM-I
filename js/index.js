@@ -77,12 +77,16 @@ mcBotCont[2].textContent = siteContent["main-content"]["services-content"]
 mcBotCont[3].textContent = siteContent["main-content"]["product-content"]
 mcBotCont[4].textContent = siteContent["main-content"]["vision-content"]
 
+let contactCont = document.querySelector('.contact h4')
+contactCont.textContent = siteContent["contact"]["contact-h4"]
 
+let contactPar = document.querySelectorAll('.contact p')
+contactPar[0].textContent = siteContent["contact"]["address"]
+contactPar[1].textContent = siteContent["contact"]["phone"]
+contactPar[2].textContent = siteContent["contact"]["email"]
 
-
-
-
-
+let footerCont = document.querySelector('footer p')
+footerCont.textContent = siteContent["footer"]["copyright"]
 
 
 

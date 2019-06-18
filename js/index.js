@@ -40,3 +40,82 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.alt = 'The Great Idea Company Logo'
+
+let topNav = document.querySelectorAll('nav a')
+topNav[0].textContent = siteContent["nav"]['nav-item-1']
+topNav[1].textContent = siteContent["nav"]['nav-item-2']
+topNav[2].textContent = siteContent["nav"]['nav-item-3']
+topNav[3].textContent = siteContent["nav"]['nav-item-4']
+topNav[4].textContent = siteContent["nav"]['nav-item-5']
+topNav[5].textContent = siteContent["nav"]['nav-item-6']
+
+ topNav.forEach((grecol) => {grecol.style.color = 'green'})
+
+let plusNav = document.querySelector('nav')
+  let an1 = document.createElement('a')
+  an1.textContent = 'Help'
+  an1.style.color = 'green'
+  let an2 = document.createElement('a')
+  an2.textContent = 'Me'
+  an2.style.color = 'green'
+
+  plusNav.appendChild(an1)
+  plusNav.prepend(an2)
+
+
+let ctaH1 = document.querySelector('h1')
+ctaH1.textContent = siteContent["cta"]["h1"]
+
+let bigH1 = document.querySelector('.cta-text h1')
+bigH1.innerText = "DOM\nIs\n Awesome"
+bigH1.style.color = 'purple'
+
+let ctaBut = document.querySelector('button')
+ctaBut.textContent = siteContent["cta"]["button"]
+
+let ctaImg = document.querySelector('.cta img')
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+ctaImg.alt = 'A circle image of some multicolored code with a black background'
+ctaImg.style.border = '10px dotted yellow'
+
+
+let mcTopCont = document.querySelectorAll('.main-content h4')
+mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
+mcTopCont[1].textContent = siteContent["main-content"]["about-h4"]
+mcTopCont[2].textContent = siteContent["main-content"]["services-h4"]
+mcTopCont[3].textContent = siteContent["main-content"]["product-h4"]
+mcTopCont[4].textContent = siteContent["main-content"]["vision-h4"]
+
+
+
+let midImg = document.querySelector('.middle-img')
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+midImg.alt = 'A rectangle image that spans the page with a black background and half of it ahs some code.'
+
+let mcBotCont = document.querySelectorAll('.main-content p')
+mcBotCont[0].textContent = siteContent["main-content"]["features-content"]
+mcBotCont[0].style.color = 'yellow'
+mcBotCont[1].textContent = siteContent["main-content"]["about-content"]
+mcBotCont[2].textContent = siteContent["main-content"]["services-content"]
+mcBotCont[2].style.background = 'green'
+mcBotCont[3].textContent = siteContent["main-content"]["product-content"]
+mcBotCont[3].style.border = '5px solid purple'
+mcBotCont[4].textContent = siteContent["main-content"]["vision-content"]
+
+let contactCont = document.querySelector('.contact h4')
+contactCont.textContent = siteContent["contact"]["contact-h4"]
+
+let contactPar = document.querySelectorAll('.contact p')
+contactPar[0].textContent = siteContent["contact"]["address"]
+contactPar[1].textContent = siteContent["contact"]["phone"]
+contactPar[2].textContent = siteContent["contact"]["email"]
+
+let bigP1 = document.querySelectorAll('.contact p')
+bigP1[0].innerText = "123 Way 456 Street\n Somewhere, USA"
+
+let footerCont = document.querySelector('footer p')
+footerCont.textContent = siteContent["footer"]["copyright"]
+
+
+

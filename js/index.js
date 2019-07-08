@@ -96,3 +96,9 @@ console.log(contactp)
 contactp[0].innerText = "123 Way 456 Street\n Somewhere, USA"
 contactp[1].textContent = siteContent.contact["phone"]
 contactp[2].textContent = siteContent.contact["email"]
+
+//footer section
+
+let footeer = document.querySelector('footer p')
+console.log(footeer)
+footeer.textContent = siteContent.footer['copyright']

@@ -41,81 +41,84 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.alt = 'The Great Idea Company Logo'
+logo.style.backgroundColor = 'white'
 
-let topNav = document.querySelectorAll('nav a')
-topNav[0].textContent = siteContent["nav"]['nav-item-1']
-topNav[1].textContent = siteContent["nav"]['nav-item-2']
-topNav[2].textContent = siteContent["nav"]['nav-item-3']
-topNav[3].textContent = siteContent["nav"]['nav-item-4']
-topNav[4].textContent = siteContent["nav"]['nav-item-5']
-topNav[5].textContent = siteContent["nav"]['nav-item-6']
-
- topNav.forEach((grecol) => {grecol.style.color = 'green'})
-
-let plusNav = document.querySelector('nav')
-  let an1 = document.createElement('a')
-  an1.textContent = 'Help'
-  an1.style.color = 'green'
-  let an2 = document.createElement('a')
-  an2.textContent = 'Me'
-  an2.style.color = 'green'
-
-  plusNav.appendChild(an1)
-  plusNav.prepend(an2)
+// forEach to set up nav
+let navStuff = document.querySelectorAll('nav a')
+console.log(navStuff)
+navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+1}`];
+})
 
 
-let ctaH1 = document.querySelector('h1')
-ctaH1.textContent = siteContent["cta"]["h1"]
+const addnava = document.createElement('a')
+const addnava2 = document.createElement('a')
+addnava.textContent = 'Sup'
+addnava2.textContent = 'Yo'
+const navn = document.querySelector('nav')
+navn.appendChild(addnava)
+navn.prepend(addnava2)
+addnava.style.color = 'green'
+addnava2.style.color = 'green'
 
-let bigH1 = document.querySelector('.cta-text h1')
-bigH1.innerText = "DOM\nIs\n Awesome"
-bigH1.style.color = 'purple'
+const headr = document.querySelector('header')
+headr.style.backgroundColor = 'black'
+headr.style.borderBottom = '5px dotted green'
 
-let ctaBut = document.querySelector('button')
-ctaBut.textContent = siteContent["cta"]["button"]
+navStuff.forEach(item => item.style.color = 'green')
 
-let ctaImg = document.querySelector('.cta img')
-ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
-ctaImg.alt = 'A circle image of some multicolored code with a black background'
-ctaImg.style.border = '10px dotted yellow'
+//cta section
+let h1Stuff = document.querySelector('.cta-text h1')
+console.log(h1Stuff)
+h1Stuff.innerText = "DOM\nIs\nAwesome"
 
+let buttonStuff = document.querySelector('.cta-text button')
+console.log(buttonStuff)
+buttonStuff.textContent = siteContent.cta['button']
 
-let mcTopCont = document.querySelectorAll('.main-content h4')
-mcTopCont[0].textContent = siteContent["main-content"]["features-h4"]
-mcTopCont[1].textContent = siteContent["main-content"]["about-h4"]
-mcTopCont[2].textContent = siteContent["main-content"]["services-h4"]
-mcTopCont[3].textContent = siteContent["main-content"]["product-h4"]
-mcTopCont[4].textContent = siteContent["main-content"]["vision-h4"]
+let headerImg = document.querySelector('#cta-img')
+console.log(headerImg)
+headerImg.src = siteContent.cta['img-src']
+headerImg.alt = 'Unbeleivable image of a code block on a black background'
 
+//main content section
 
+let textContenth4 = document.querySelectorAll('.text-content h4')
+console.log(textContenth4)
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[1].textContent = siteContent["main-content"]["about-h4"]
+textContenth4[2].textContent = siteContent["main-content"]["services-h4"]
+textContenth4[3].textContent = siteContent["main-content"]["product-h4"]
+textContenth4[4].textContent = siteContent["main-content"]["vision-h4"]
 
-let midImg = document.querySelector('.middle-img')
-midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
-midImg.alt = 'A rectangle image that spans the page with a black background and half of it ahs some code.'
+textContenth4.forEach(item => item.style.backgroundColor = 'yellow')
 
-let mcBotCont = document.querySelectorAll('.main-content p')
-mcBotCont[0].textContent = siteContent["main-content"]["features-content"]
-mcBotCont[0].style.color = 'yellow'
-mcBotCont[1].textContent = siteContent["main-content"]["about-content"]
-mcBotCont[2].textContent = siteContent["main-content"]["services-content"]
-mcBotCont[2].style.background = 'green'
-mcBotCont[3].textContent = siteContent["main-content"]["product-content"]
-mcBotCont[3].style.border = '5px solid purple'
-mcBotCont[4].textContent = siteContent["main-content"]["vision-content"]
+let textContentp = document.querySelectorAll('.text-content p')
+console.log(textContentp)
+textContentp[0].textContent = siteContent["main-content"]["features-content"]
+textContentp[1].textContent = siteContent["main-content"]["about-content"]
+textContentp[2].textContent = siteContent["main-content"]["services-content"]
+textContentp[3].textContent = siteContent["main-content"]["product-content"]
+textContentp[4].textContent = siteContent["main-content"]["vision-content"]
 
-let contactCont = document.querySelector('.contact h4')
-contactCont.textContent = siteContent["contact"]["contact-h4"]
+let midImg = document.querySelector('#middle-img')
+console.log(midImg)
+midImg.src = siteContent["main-content"]["middle-img-src"]
+midImg.alt = 'Amazing image of a code block with some high tech patterns in the back'
 
-let contactPar = document.querySelectorAll('.contact p')
-contactPar[0].textContent = siteContent["contact"]["address"]
-contactPar[1].textContent = siteContent["contact"]["phone"]
-contactPar[2].textContent = siteContent["contact"]["email"]
+//contact section
 
-let bigP1 = document.querySelectorAll('.contact p')
-bigP1[0].innerText = "123 Way 456 Street\n Somewhere, USA"
+let contacth4 = document.querySelector('.contact h4')
+console.log(contacth4)
+contacth4.textContent = siteContent.contact["contact-h4"]
 
-let footerCont = document.querySelector('footer p')
-footerCont.textContent = siteContent["footer"]["copyright"]
+let contactp = document.querySelectorAll('.contact p')
+console.log(contactp)
+contactp[0].innerText = "123 Way 456 Street\n Somewhere, USA"
+contactp[1].textContent = siteContent.contact["phone"]
+contactp[2].textContent = siteContent.contact["email"]
 
+//footer section
 
-
+let footeer = document.querySelector('footer p')
+console.log(footeer)
+footeer.textContent = siteContent.footer['copyright']

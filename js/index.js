@@ -67,7 +67,19 @@ headerImg.alt = 'Unbeleivable image of a code block on a black background'
 let textContenth4 = document.querySelectorAll('.text-content h4')
 console.log(textContenth4)
 textContenth4[0].textContent = siteContent["main-content"]['features-h4']
-textContenth4[0].textContent = siteContent["main-content"]['features-h4']
-textContenth4[0].textContent = siteContent["main-content"]['features-h4']
-textContenth4[0].textContent = siteContent["main-content"]['features-h4']
-textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[1].textContent = siteContent["main-content"]["about-h4"]
+textContenth4[2].textContent = siteContent["main-content"]["services-h4"]
+textContenth4[3].textContent = siteContent["main-content"]["product-h4"]
+textContenth4[4].textContent = siteContent["main-content"]["vision-h4"]
+
+let textContentp = document.querySelectorAll('.text-content p')
+console.log(textContentp)
+textContentp[0].textContent = siteContent["main-content"]["features-content"]
+textContentp[1].textContent = siteContent["main-content"]["about-content"]
+textContentp[2].textContent = siteContent["main-content"]["services-content"]
+textContentp[3].textContent = siteContent["main-content"]["product-content"]
+textContentp[4].textContent = siteContent["main-content"]["vision-content"]
+
+
+
+

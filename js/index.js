@@ -51,7 +51,7 @@ navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+
 //cta section
 let h1Stuff = document.querySelector('.cta-text h1')
 console.log(h1Stuff)
-h1Stuff.textContent = siteContent.cta['h1']
+h1Stuff.innerText = "DOM\nIs\nAwesome"
 
 let buttonStuff = document.querySelector('.cta-text button')
 console.log(buttonStuff)
@@ -93,4 +93,6 @@ contacth4.textContent = siteContent.contact["contact-h4"]
 
 let contactp = document.querySelectorAll('.contact p')
 console.log(contactp)
-
+contactp[0].innerText = "123 Way 456 Street\n Somewhere, USA"
+contactp[1].textContent = siteContent.contact["phone"]
+contactp[2].textContent = siteContent.contact["email"]

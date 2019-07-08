@@ -80,6 +80,11 @@ textContentp[2].textContent = siteContent["main-content"]["services-content"]
 textContentp[3].textContent = siteContent["main-content"]["product-content"]
 textContentp[4].textContent = siteContent["main-content"]["vision-content"]
 
+let midImg = document.querySelector('#middle-img')
+console.log(midImg)
+midImg.src = siteContent["main-content"]["middle-img-src"]
+midImg.alt = 'Amazing image of a code block with some high tech patterns in the back'
+
 
 
 

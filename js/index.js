@@ -85,6 +85,12 @@ console.log(midImg)
 midImg.src = siteContent["main-content"]["middle-img-src"]
 midImg.alt = 'Amazing image of a code block with some high tech patterns in the back'
 
+//contact section
 
+let contacth4 = document.querySelector('.contact h4')
+console.log(contacth4)
+contacth4.textContent = siteContent.contact["contact-h4"]
 
+let contactp = document.querySelectorAll('.contact p')
+console.log(contactp)
 

@@ -48,6 +48,17 @@ console.log(navStuff)
 navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+1}`];
 })
 
+
+const addnava = document.createElement('a')
+const addnava2 = document.createElement('a')
+addnava.textContent = 'Sup'
+addnava2.textContent = 'Yo'
+const navn = document.querySelector('nav')
+navn.appendChild(addnava)
+navn.prepend(addnava2)
+addnava.style.color = 'green'
+addnava2.style.color = 'green'
+
 navStuff.forEach(item => item.style.color = 'green')
 
 //cta section

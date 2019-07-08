@@ -42,7 +42,16 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.alt = 'The Great Idea Company Logo'
 
+// forEach to set up nav
 let navStuff = document.querySelectorAll('nav a')
 console.log(navStuff)
 navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+1}`];
 })
+
+//cta section
+let h1Stuff = document.querySelector('.cta-text h1')
+console.log(h1Stuff)
+h1Stuff.textContent = siteContent.cta['h1']
+
+let buttonStuff = document.querySelector('.cta-text button')
+console.log(buttonStuff)

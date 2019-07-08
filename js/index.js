@@ -48,6 +48,8 @@ console.log(navStuff)
 navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+1}`];
 })
 
+navStuff.forEach(item => item.style.color = 'green')
+
 //cta section
 let h1Stuff = document.querySelector('.cta-text h1')
 console.log(h1Stuff)

@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.alt = 'The Great Idea Company Logo'
+logo.style.backgroundColor = 'white'
 
 // forEach to set up nav
 let navStuff = document.querySelectorAll('nav a')
@@ -58,6 +59,10 @@ navn.appendChild(addnava)
 navn.prepend(addnava2)
 addnava.style.color = 'green'
 addnava2.style.color = 'green'
+
+const headr = document.querySelector('header')
+headr.style.backgroundColor = 'black'
+headr.style.borderBottom = '5px dotted green'
 
 navStuff.forEach(item => item.style.color = 'green')
 

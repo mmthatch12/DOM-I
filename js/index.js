@@ -61,3 +61,13 @@ let headerImg = document.querySelector('#cta-img')
 console.log(headerImg)
 headerImg.src = siteContent.cta['img-src']
 headerImg.alt = 'Unbeleivable image of a code block on a black background'
+
+//main content section
+
+let textContenth4 = document.querySelectorAll('.text-content h4')
+console.log(textContenth4)
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']
+textContenth4[0].textContent = siteContent["main-content"]['features-h4']

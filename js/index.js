@@ -44,4 +44,5 @@ logo.alt = 'The Great Idea Company Logo'
 
 let navStuff = document.querySelectorAll('nav a')
 console.log(navStuff)
-navStuff.forEach((item, i) => {item.textContent = siteContent.nav[nav-item-${i+1}]})
+navStuff.forEach((item, i) => {item.textContent = siteContent.nav[`nav-item-${i+1}`];
+})

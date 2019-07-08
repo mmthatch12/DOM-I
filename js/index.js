@@ -90,6 +90,8 @@ textContenth4[2].textContent = siteContent["main-content"]["services-h4"]
 textContenth4[3].textContent = siteContent["main-content"]["product-h4"]
 textContenth4[4].textContent = siteContent["main-content"]["vision-h4"]
 
+textContenth4.forEach(item => item.style.backgroundColor = 'yellow')
+
 let textContentp = document.querySelectorAll('.text-content p')
 console.log(textContentp)
 textContentp[0].textContent = siteContent["main-content"]["features-content"]

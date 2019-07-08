@@ -55,3 +55,9 @@ h1Stuff.textContent = siteContent.cta['h1']
 
 let buttonStuff = document.querySelector('.cta-text button')
 console.log(buttonStuff)
+buttonStuff.textContent = siteContent.cta['button']
+
+let headerImg = document.querySelector('#cta-img')
+console.log(headerImg)
+headerImg.src = siteContent.cta['img-src']
+headerImg.alt = 'Unbeleivable image of a code block on a black background'
